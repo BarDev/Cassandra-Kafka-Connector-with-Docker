@@ -1,0 +1,12 @@
+FROM datastax/dse-server:6.8.9
+
+USER root
+
+RUN apt update -y && \
+    apt install dnsutils -y && \
+    apt install net-tools -y 
+
+
+# # Run DSE in foreground by default
+USER dse
+ENTRYPOINT [ "/entrypoint.sh", "dse", "cassandra", "-f" ]
