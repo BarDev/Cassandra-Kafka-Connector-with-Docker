@@ -7,3 +7,6 @@ All the commands to run are in [docker_dse_kafka_scratchpad.md](docker_dse_kafka
 
 This Katakoda Scenerio is a great intro [Get Started with the Apache Kafka™ Connector for Cassandra
 ](https://www.datastax.com/dev/scenario/datastax-kafka-connector)
+
+
+This will run Docker for Desktop, but I needed to allocate 3 GB of memory to Docker
